@@ -1,5 +1,5 @@
 {
-  "name": "rstore_next",
+  "name": "VK",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,13 +9,17 @@
     "start": "next start",
     "lint": "next lint",
     "lint-fix": "npm run lint -- --fix"
-
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/material": "^6.1.5",
+    "@sendbird/uikit-react": "^3.15.7",
     "@typescript-eslint/eslint-plugin": "^6.2.1",
     "@typescript-eslint/parser": "^6.2.1",
+    "@vkid/sdk": "^2.4.0",
     "axios": "^1.6.7",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
