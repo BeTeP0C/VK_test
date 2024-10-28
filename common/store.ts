@@ -17,7 +17,7 @@ export class UserStore {
 
   // Получаем данные из api
   async getUsers(endpoint: string): Promise<TUser[]> {
-    const token: string = "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"
+    const token: string = process.env.TOKEN_API_GITHUB
 
     const resp = await axios.get(endpoint, {
       headers: {
