@@ -1,6 +1,7 @@
 import { TUser } from "../types/TUser";
 import axios from "axios";
 import { makeAutoObservable, runInAction } from "mobx";
+import { GIT_HUB_TOKEN } from "./token";
 
 export class UserStore {
   users: TUser[] = [];
@@ -17,11 +18,9 @@ export class UserStore {
 
   // Получаем данные из api
   async getUsers(endpoint: string): Promise<TUser[]> {
-    const token: string = process.env.TOKEN_API_GITHUB
-
     const resp = await axios.get(endpoint, {
       headers: {
-        Authorization: `token ${token}`
+        Authorization: `token ${GIT_HUB_TOKEN}`
       }
     })
 
