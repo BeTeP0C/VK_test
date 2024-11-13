@@ -1,1 +1,1 @@
-export const GIT_HUB_TOKEN: string = "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"
+export const GIT_HUB_TOKEN: string = "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"
